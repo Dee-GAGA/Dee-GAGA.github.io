@@ -2,135 +2,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeeGAGA | GUGUGAGA</title>
+  <title>DeeGAGA | GUGUGAGA Universe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #000;
-      color: #fff;
-      overflow-x: hidden;
-    }
-    section {
-      padding: 4rem 2rem;
-      border-bottom: 1px solid #333;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-      justify-items: center;
-      margin-top: 2rem;
-    }
-    iframe {
-      width: 100%;
-      height: 200px;
-      border: none;
-    }
-    .contact-icons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .contact-icons img {
-      width: 50px;
-      height: 50px;
-    }
-    .contact-icons-row {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 1rem 0;
-    }
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background: linear-gradient(270deg, #0f0f0f, #1a1a1a, #0f0f0f);
+  background-size: 600% 600%;
+  animation: backgroundShift 30s ease infinite;
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, #00ffcc, #ff00cc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.typing {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+section {
+  padding: 2rem;
+  border-top: 1px solid #444;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+.social-icons, .bottom-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.social-icons i, .bottom-contact i {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons i:hover, .bottom-contact i:hover {
+  transform: scale(1.2);
+  color: #00ffff;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #444;
+  background: rgba(0, 0, 0, 0.6);
+}
+
   </style>
 </head>
 <body>
-  <section id="dee-gaga">
-    <h1>DeeGAGA</h1>
+  <header>
+    <h1 class="typing">Welcome to the World of DeeGAGA</h1>
+  </header>  <section>
+    <h2>Featured Videos</h2>
     <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/nZmXzBOtLjc"></iframe>
-      <iframe src="https://www.youtube.com/embed/Au8AIGI6ZzM"></iframe>
-      <iframe src="https://www.youtube.com/embed/6ZXI1BAHu4o"></iframe>
-      <iframe src="https://www.tiktok.com/embed/v2/7346573899652963590"></iframe>
+      <iframe src="https://www.youtube.com/embed/6ZXI1BAHu4o" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/KJkT8wVZg2A" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/zD1Q6s28DZ8" allowfullscreen></iframe>
+      <iframe src="https://www.tiktok.com/embed/v2/7281508931457125662" allowfullscreen></iframe>
     </div>
-    <div class="contact-icons">
-      <div class="contact-icons-row">
-        <img src="yt.png" alt="YouTube">
-        <img src="tt.png" alt="TikTok">
-        <img src="ig.png" alt="Instagram">
-        <img src="threads.png" alt="Threads">
-      </div>
-      <div class="contact-icons-row">
-        <img src="fb.png" alt="Facebook">
-        <img src="x.png" alt="X">
-        <img src="tg.png" alt="Telegram">
-      </div>
+  </section>  <section>
+    <h2>DeeGAGA</h2>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@dee.gaga_0fficial"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@dee.gaga_0fficial"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/dee.gaga_0fficial"><i class="fab fa-instagram"></i></a>
+      <i class="fab fa-threads"></i>
+      <a href="https://www.facebook.com/profile.php?id=61557268756954"><i class="fab fa-facebook"></i></a>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-telegram"></i>
     </div>
-  </section>  <section id="bluehouse">
+  </section>  <section>
     <h2>BLUEHOUSE</h2>
-    <!-- Placeholder for BLUEHOUSE content -->
-    <div class="contact-icons">
-      <div class="contact-icons-row">
-        <img src="yt.png" alt="YouTube">
-        <img src="tt.png" alt="TikTok">
-        <img src="ig.png" alt="Instagram">
-        <img src="threads.png" alt="Threads">
-      </div>
-      <div class="contact-icons-row">
-        <img src="fb.png" alt="Facebook">
-        <img src="x.png" alt="X">
-        <img src="tg.png" alt="Telegram">
-      </div>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@bluehouse_ent"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@bluehouse_ent"><i class="fab fa-tiktok"></i></a>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-threads"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-telegram"></i>
     </div>
-  </section>  <section id="gspot">
-    <h2>G-Spot Studios</h2>
-    <!-- Placeholder for G-Spot content -->
-    <div class="contact-icons">
-      <div class="contact-icons-row">
-        <img src="yt.png" alt="YouTube">
-        <img src="tt.png" alt="TikTok">
-        <img src="ig.png" alt="Instagram">
-        <img src="threads.png" alt="Threads">
-      </div>
-      <div class="contact-icons-row">
-        <img src="fb.png" alt="Facebook">
-        <img src="x.png" alt="X">
-        <img src="tg.png" alt="Telegram">
-      </div>
+  </section>  <section>
+    <h2>G-SPOT Studios</h2>
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/@g.spot.studios.fe"><i class="fab fa-tiktok"></i></a>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-threads"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-telegram"></i>
     </div>
-  </section>  <section id="gugugaga">
+  </section>  <section>
     <h2>GUGUGAGA</h2>
-    <!-- Placeholder for GUGUGAGA content -->
-    <div class="contact-icons">
-      <div class="contact-icons-row">
-        <img src="yt.png" alt="YouTube">
-        <img src="tt.png" alt="TikTok">
-        <img src="ig.png" alt="Instagram">
-        <img src="threads.png" alt="Threads">
-      </div>
-      <div class="contact-icons-row">
-        <img src="fb.png" alt="Facebook">
-        <img src="x.png" alt="X">
-        <img src="tg.png" alt="Telegram">
-      </div>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@gugugaga_arts"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/gugugagaarts"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/GUGUGAGA_Arts"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://tune.fm/@GugugagaArts"><i class="fas fa-music"></i></a>
     </div>
-  </section>  <section id="bottom-contact">
-    <h2>Contact Me</h2>
-    <div class="contact-icons-row">
-      <img src="wa.png" alt="WhatsApp">
-      <img src="email.png" alt="Email">
-      <img src="discord.png" alt="Discord">
+  </section>  <footer>
+    <h2>Contact Me Directly</h2>
+    <div class="bottom-contact">
+      <a href="https://wa.me/254793833877"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:gugugaga.arts@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://discord.gg/vtFF6neK"><i class="fab fa-discord"></i></a>
     </div>
-  </section>  <section id="music-preview">
-    <h2>Music Preview</h2>
-    <p style="text-align: center;">
-      <a href="https://tune.fm/@GugugagaArts" target="_blank" style="color: #0ff; text-decoration: underline;">Listen on Tune.fm</a>
-    </p>
-  </section>
+    <p>© 2025 DeeGAGA / GUGUGAGA Universe</p>
+  </footer>
 </body>
 </html>
