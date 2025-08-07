@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeeGAGA | GUGUGAGA Universe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #ffffff;
+      overflow-x: hidden;
+      position: relative;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #7f00ff;
+      text-shadow: 0 0 10px #00c3ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    .video-embed {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    iframe {
+      width: 90%;
+      max-width: 600px;
+      height: 350px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(127, 0, 255, 0.5);
+    }
+    .contact-icons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .contact-icons a {
+      margin: 10px;
+      font-size: 1.8rem;
+      color: #00c3ff;
+      transition: 0.3s;
+    }
+    .contact-icons a:hover {
+      color: #7f00ff;
+      transform: scale(1.2);
+    }
+    footer {
+      padding: 30px;
+      text-align: center;
+      background-color: #111;
+      color: #777;
+    }
+    .cursor {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #00c3ff;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.15s ease-in-out;
+    }
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="cursor" id="cursor"></div>
+
+  <header>
+    <h1><span id="typed"></span></h1>
+    <p>Producer | Dancer | Writer | Developer | Founder of GUGUGAGA</p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom:20px;">🎬 Featured Videos</h2>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/pAVMZ3gMA4M" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/AuUuRkuBHeg" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom:20px;">🎧 Music Preview</h2>
+    <audio controls>
+      <source src="your-audio-file.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom:20px;">📲 Connect With Me</h2>
+    <div class="contact-icons">
+      <a href="https://wa.me/254793833877" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:adriankimomar@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/dee.gaga_0fficial" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/GUGUGAGA_Arts" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.tiktok.com/@dee.gaga_0fficial" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://discord.gg/vtFF6neK" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="https://youtube.com/@gugugaga_arts" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DeeGAGA / GUGUGAGA | Designed with 🔥 by Dee & Jay</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    const typed = new Typed('#typed', {
+      strings: [
+        'Hey, I\'m DeeGAGA',
+        'Founder of GUGUGAGA',
+        'Producer at G-Spot Studios',
+        'Manager of BLUEHOUSE',
+        'Writer | Dancer | Coder | Visionary'
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": { "value": "#00c3ff" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000000" },
+          "polygon": { "nb_sides": 5 }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00c3ff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        },
+        "modes": {
+          "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+          "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+          "repulse": { "distance": 200, "duration": 0.4 },
+          "push": { "particles_nb": 4 },
+          "remove": { "particles_nb": 2 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
+
