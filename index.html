@@ -2,156 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DeeGAGA | GUGUGAGA</title>
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <!-- Styling -->
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: url('https://images.unsplash.com/photo-1511453679115-1f4c5f04c0e4') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000;
+      color: #fff;
       overflow-x: hidden;
     }
-
-    header {
-      background: rgba(0,0,0,0.7);
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      animation: typing 5s steps(40, end), blink 0.75s step-end infinite;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 4px solid;
-      width: fit-content;
-      margin: auto;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent }
-    }
-
     section {
-      background: rgba(0,0,0,0.6);
-      margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 1rem;
-      max-width: 800px;
+      padding: 4rem 2rem;
+      border-bottom: 1px solid #333;
     }
-
-    h2 {
-      border-bottom: 2px solid white;
-      padding-bottom: 0.5rem;
-    }
-
-    .socials a {
-      display: inline-block;
-      margin: 0.5rem;
-      color: white;
-      font-size: 1.4rem;
-      text-decoration: none;
-    }
-
-    .socials a:hover {
-      color: cyan;
-    }
-
-    footer {
+    h1, h2 {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
     }
-
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      justify-items: center;
+      margin-top: 2rem;
+    }
     iframe {
       width: 100%;
-      height: 250px;
+      height: 200px;
       border: none;
-      margin-top: 1rem;
     }
-
-    .projects img {
-      width: 100%;
-      border-radius: 1rem;
-      margin-top: 1rem;
+    .contact-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
-
-    /* Glowing Cursor */
-    html {
-      cursor: url("https://cur.cursors-4u.net/others/oth-9/oth838.cur"), auto;
+    .contact-icons img {
+      width: 50px;
+      height: 50px;
     }
-
-    /* Scroll Animation */
-    @keyframes bgMove {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+    .contact-icons-row {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Welcome to DeeGAGA's Universe</h1>
-    <p>The home of creativity, music, dance, and ultimate tech vibes – join the movement with GUGUGAGA!</p>
-    <p>🎤 DeeGAGA | Dangerzone | GUGUGAGA | G-Spot Studios | BLUEHOUSE 💃</p>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>I'm DeeGAGA, a diverse artist producing music, managing dance crews, and building a digital empire. From lyrics to beats, from novels to tech – I do it all under GUGUGAGA.</p>
-  </section>
-
-  <section>
-    <h2>Music & Production</h2>
-    <p>Founder of G-Spot Studios. I create and produce pop & trap music. Check out my sounds, collabs with GUGU Duntler, and fan-favorite tracks on all major platforms!</p>
-    <iframe src="https://www.youtube.com/embed/vdD3QFDt7ek" allowfullscreen></iframe>
-  </section>
-
-  <section>
-    <h2>BLUEHOUSE Dance House</h2>
-    <p>We are a dance family open to anyone. BLUEHOUSE is your home if you live for rhythm, stage, and team energy. Come perform, compete, and vibe with us!</p>
-    <iframe src="https://www.youtube.com/embed/QORObJ0UIpY" allowfullscreen></iframe>
-  </section>
-
-  <section>
-    <h2>Projects Preview</h2>
-    <div class="projects">
-      <img src="https://raw.githubusercontent.com/deegaga/deegaga.github.io/main/assets/sample-project.png" alt="Project Preview">
-      <p>🎧 Track & Fan Manager – Organize music & interact with fans in one dashboard.</p>
+  <section id="dee-gaga">
+    <h1>DeeGAGA</h1>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/nZmXzBOtLjc"></iframe>
+      <iframe src="https://www.youtube.com/embed/Au8AIGI6ZzM"></iframe>
+      <iframe src="https://www.youtube.com/embed/6ZXI1BAHu4o"></iframe>
+      <iframe src="https://www.tiktok.com/embed/v2/7346573899652963590"></iframe>
+    </div>
+    <div class="contact-icons">
+      <div class="contact-icons-row">
+        <img src="yt.png" alt="YouTube">
+        <img src="tt.png" alt="TikTok">
+        <img src="ig.png" alt="Instagram">
+        <img src="threads.png" alt="Threads">
+      </div>
+      <div class="contact-icons-row">
+        <img src="fb.png" alt="Facebook">
+        <img src="x.png" alt="X">
+        <img src="tg.png" alt="Telegram">
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Connect with Me</h2>
-    <p>Let's create something dope together or simply vibe. Hit me up anytime!</p>
-    <div class="socials">
-      <a href="https://wa.me/254793833877"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="mailto:gugugaga.arts@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://instagram.com/dee.gaga_0fficial"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://x.com/GUGUGAGA_Arts"><i class="fab fa-x-twitter"></i> X (Twitter)</a>
-      <a href="https://youtube.com/@gugugaga_arts"><i class="fab fa-youtube"></i> YouTube</a>
-      <a href="https://tiktok.com/@g.spot.studios.fe"><i class="fab fa-tiktok"></i> TikTok</a>
-      <a href="https://tune.fm/@GugugagaArts"><i class="fas fa-music"></i> Tune.fm</a>
-      <a href="https://discord.gg/vtFF6neK"><i class="fab fa-discord"></i> Discord</a>
+  <section id="bluehouse">
+    <h2>BLUEHOUSE</h2>
+    <!-- Placeholder for BLUEHOUSE content -->
+    <div class="contact-icons">
+      <div class="contact-icons-row">
+        <img src="yt.png" alt="YouTube">
+        <img src="tt.png" alt="TikTok">
+        <img src="ig.png" alt="Instagram">
+        <img src="threads.png" alt="Threads">
+      </div>
+      <div class="contact-icons-row">
+        <img src="fb.png" alt="Facebook">
+        <img src="x.png" alt="X">
+        <img src="tg.png" alt="Telegram">
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 DeeGAGA | All rights reserved | GUGUGAGA Universe</p>
-  </footer>
+  <section id="gspot">
+    <h2>G-Spot Studios</h2>
+    <!-- Placeholder for G-Spot content -->
+    <div class="contact-icons">
+      <div class="contact-icons-row">
+        <img src="yt.png" alt="YouTube">
+        <img src="tt.png" alt="TikTok">
+        <img src="ig.png" alt="Instagram">
+        <img src="threads.png" alt="Threads">
+      </div>
+      <div class="contact-icons-row">
+        <img src="fb.png" alt="Facebook">
+        <img src="x.png" alt="X">
+        <img src="tg.png" alt="Telegram">
+      </div>
+    </div>
+  </section>
+
+  <section id="gugugaga">
+    <h2>GUGUGAGA</h2>
+    <!-- Placeholder for GUGUGAGA content -->
+    <div class="contact-icons">
+      <div class="contact-icons-row">
+        <img src="yt.png" alt="YouTube">
+        <img src="tt.png" alt="TikTok">
+        <img src="ig.png" alt="Instagram">
+        <img src="threads.png" alt="Threads">
+      </div>
+      <div class="contact-icons-row">
+        <img src="fb.png" alt="Facebook">
+        <img src="x.png" alt="X">
+        <img src="tg.png" alt="Telegram">
+      </div>
+    </div>
+  </section>
+
+  <section id="bottom-contact">
+    <h2>Contact Me</h2>
+    <div class="contact-icons-row">
+      <img src="wa.png" alt="WhatsApp">
+      <img src="email.png" alt="Email">
+      <img src="discord.png" alt="Discord">
+    </div>
+  </section>
+
+  <section id="music-preview">
+    <h2>Music Preview</h2>
+    <p style="text-align: center;">
+      <a href="https://tune.fm/@GugugagaArts" target="_blank" style="color: #0ff; text-decoration: underline;">Listen on Tune.fm</a>
+    </p>
+  </section>
 </body>
 </html>
+
