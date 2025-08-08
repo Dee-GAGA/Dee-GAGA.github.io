@@ -1,171 +1,111 @@
-<!DOCTYPE html><html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeeGAGA | GUGUGAGA Universe</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>DeeGAGA | GUGUGAGA Arts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }body {
-  font-family: 'Arial', sans-serif;
-  color: white;
-  overflow-x: hidden;
-  background: linear-gradient(270deg, #0f0f0f, #1a1a1a, #0f0f0f);
-  background-size: 600% 600%;
-  animation: backgroundShift 30s ease infinite;
-}
-
-@keyframes backgroundShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      background-size: cover;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      animation: stars 100s linear infinite;
+      overflow-x: hidden;
+    }@keyframes stars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 10000px;
+  }
 }
 
 header {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-header h1 {
-  font-size: 3rem;
-  background: linear-gradient(to right, #00ffcc, #ff00cc);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.typing {
-  border-right: 2px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(30, end), blink .75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  50% { border-color: transparent }
-}
-
-section {
   padding: 2rem;
-  border-top: 1px solid #444;
-}
-
-h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  color: #00ffff;
 }
 
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-iframe {
-  width: 100%;
-  height: 200px;
-  border: none;
+p.intro {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
 }
 
-.social-icons, .bottom-contact {
+.socials {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem;
 }
 
-.social-icons i, .bottom-contact i {
-  font-size: 2rem;
-  cursor: pointer;
-  transition: transform 0.3s;
+.socials a {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-.social-icons i:hover, .bottom-contact i:hover {
-  transform: scale(1.2);
-  color: #00ffff;
+.socials a:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
-footer {
-  text-align: center;
+section {
   padding: 2rem;
-  border-top: 1px solid #444;
-  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.contact {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+.videos {
+  padding: 2rem;
+  text-align: center;
+}
+
+iframe {
+  width: 90%;
+  max-width: 560px;
+  height: 315px;
+  margin: 1rem 0;
 }
 
   </style>
-</head>
-<body>
+</head><body>
   <header>
-    <h1 class="typing">Welcome to the World of DeeGAGA</h1>
-  </header>  <section>
+    <h1>DeeGAGA</h1>
+    <p class="intro">Welcome to the galaxy of sound, rhythm, and raw creative fire. I'm DeeGAGA — artist, dancer, producer, and the chaotic mastermind behind GUGUGAGA. If you vibe with authenticity, insane energy, and artistry that doesn’t follow the rules — hit those icons and dive into my world. No filters. No fear. Just fire. 🔥</p>
+  </header>  <section class="socials">
+    <a href="https://www.instagram.com/dee.gaga_0fficial">Instagram</a>
+    <a href="https://x.com/GUGUGAGA_Arts">X (Twitter)</a>
+    <a href="https://www.facebook.com/profile.php?id=61557268756954">Facebook</a>
+    <a href="https://www.tiktok.com/@dee.gaga_0fficial">TikTok</a>
+    <a href="https://www.youtube.com/@gugugaga_arts">YouTube</a>
+    <a href="https://tune.fm/@GugugagaArts">Tune.fm</a>
+    <a href="https://discord.gg/vtFF6neK">Discord</a>
+    <a href="mailto:gugugaga.arts@gmail.com">Email Me</a>
+    <a href="tel:+254793833877">Call Me</a>
+  </section>  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:gugugaga.arts@gmail.com">gugugaga.arts@gmail.com</a></p>
+    <p>WhatsApp: <a href="tel:+254793833877">0793 833 877</a> / <a href="tel:+254731030205">0731 030 205</a></p>
+  </section>  <section class="videos">
     <h2>Featured Videos</h2>
-    <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/6ZXI1BAHu4o" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/KJkT8wVZg2A" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/zD1Q6s28DZ8" allowfullscreen></iframe>
-      <iframe src="https://www.tiktok.com/embed/v2/7281508931457125662" allowfullscreen></iframe>
-    </div>
-  </section>  <section>
-    <h2>DeeGAGA</h2>
-    <div class="social-icons">
-      <a href="https://www.youtube.com/@dee.gaga_0fficial"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.tiktok.com/@dee.gaga_0fficial"><i class="fab fa-tiktok"></i></a>
-      <a href="https://www.instagram.com/dee.gaga_0fficial"><i class="fab fa-instagram"></i></a>
-      <i class="fab fa-threads"></i>
-      <a href="https://www.facebook.com/profile.php?id=61557268756954"><i class="fab fa-facebook"></i></a>
-      <i class="fab fa-x-twitter"></i>
-      <i class="fab fa-telegram"></i>
-    </div>
-  </section>  <section>
-    <h2>BLUEHOUSE</h2>
-    <div class="social-icons">
-      <a href="https://www.youtube.com/@bluehouse_ent"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.tiktok.com/@bluehouse_ent"><i class="fab fa-tiktok"></i></a>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-threads"></i>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-x-twitter"></i>
-      <i class="fab fa-telegram"></i>
-    </div>
-  </section>  <section>
-    <h2>G-SPOT Studios</h2>
-    <div class="social-icons">
-      <a href="https://www.tiktok.com/@g.spot.studios.fe"><i class="fab fa-tiktok"></i></a>
-      <i class="fab fa-youtube"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-threads"></i>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-x-twitter"></i>
-      <i class="fab fa-telegram"></i>
-    </div>
-  </section>  <section>
-    <h2>GUGUGAGA</h2>
-    <div class="social-icons">
-      <a href="https://www.youtube.com/@gugugaga_arts"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.instagram.com/gugugagaarts"><i class="fab fa-instagram"></i></a>
-      <a href="https://x.com/GUGUGAGA_Arts"><i class="fab fa-x-twitter"></i></a>
-      <a href="https://tune.fm/@GugugagaArts"><i class="fas fa-music"></i></a>
-    </div>
-  </section>  <footer>
-    <h2>Contact Me Directly</h2>
-    <div class="bottom-contact">
-      <a href="https://wa.me/254793833877"><i class="fab fa-whatsapp"></i></a>
-      <a href="mailto:gugugaga.arts@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://discord.gg/vtFF6neK"><i class="fab fa-discord"></i></a>
-    </div>
-    <p>© 2025 DeeGAGA / GUGUGAGA Universe</p>
-  </footer>
-</body>
-</html>
+    <iframe src="https://www.youtube.com/embed/mvbgEf1aG-c" frameborder="0" allowfullscreen></iframe>
+    <!-- Add more iframes here if needed -->
+  </section>
+</body></html>
