@@ -2,70 +2,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DeeGAGA | GUGUGAGA</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      font-family: 'Orbitron', sans-serif;
-      background: url('https://i.gifer.com/7hB9.gif') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      overflow-x: hidden;
-    }
-    .section {
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 1rem;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 0 20px 5px #a855f7;
-    }
-    .sparkle {
-      animation: sparkle 2s infinite;
-    }
-    @keyframes sparkle {
-      0%, 100% { text-shadow: 0 0 10px #a855f7, 0 0 20px #f472b6; }
-      50% { text-shadow: 0 0 20px #38bdf8, 0 0 30px #10b981; }
-    }
-    .floating {
-      animation: float 3s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }body {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 3em;
+  color: #ff4ec4;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.live-box {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.5em;
+  animation: pulse 3s infinite;
+  color: #00fff7;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff9e00;
+}
+
+.section-box {
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.section-box:hover {
+  transform: scale(1.03);
+}
+
+.section-box i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  display: block;
+  color: #fff;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-buttons a {
+  text-decoration: none;
+  background: #ff4ec4;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-buttons a:hover {
+  background: #ff9e00;
+}
+
   </style>
-</head><body class="text-center p-6">
-  <!-- Tech Live Box -->
-  <div class="fixed top-4 right-4 bg-purple-800 text-white px-4 py-2 rounded-lg shadow-xl animate-pulse z-50">
-    🎤 DeeGAGA | 🎶 GUGUGAGA | ⚡ Dangerzone | 🧠 Tech Billionaire in Making
-  </div>  <!-- Hero Section -->  <section class="section text-white">
-    <h1 class="text-5xl font-bold sparkle">Welcome to DeeGAGA's Universe</h1>
-    <p class="mt-4 text-lg">Musician, Producer, Writer, Dancer, Tech Enthusiast and Creative Pioneer. Join the movement. Powered by GUGUGAGA_Arts.</p>
-  </section>  <!-- About Section -->  <section class="section">
-    <h2 class="text-3xl font-bold mb-4"><i class="ph-user-circle text-pink-400"></i> About Me</h2>
-    <p>I’m DeeGAGA, a dynamic artist, creative producer, author, and visionary. I lead GUGUGAGA_Arts and operate from G-Spot Studios where I produce, dance, write, and build interactive tech experiences. I’m the founder of BLUEHOUSE, a growing dance house community in Kenya. My dream? A fully automated lifestyle and global stardom through innovation and sound.</p>
-  </section>  <!-- Projects Section -->  <section class="section">
-    <h2 class="text-3xl font-bold mb-4"><i class="ph-rocket-launch text-blue-400"></i> Featured Projects</h2>
-    <ul class="list-disc list-inside">
-      <li><strong>Track & Fan Manager:</strong> JSON-based system to organize music tracks and track fan engagement.</li>
-      <li><strong>GitHub Portfolio Site:</strong> Interactive portfolio with embedded videos, animations, and social integrations.</li>
-      <li><strong>GUGUGAGA Universe:</strong> A full label setup blending music, dance, tech, and community engagement.</li>
-    </ul>
-  </section>  <!-- Contact Section -->  <section class="section">
-    <h2 class="text-3xl font-bold mb-4"><i class="ph-paper-plane-tilt text-green-400"></i> Connect With Me</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center text-sm">
-      <a href="https://wa.me/254793833877" class="hover:text-green-400"><i class="ph-whatsapp-logo"></i> WhatsApp Me</a>
-      <a href="mailto:gugugaga.arts@gmail.com" class="hover:text-red-400"><i class="ph-envelope"></i> Email Me</a>
-      <a href="https://www.instagram.com/dee.gaga_0fficial" class="hover:text-pink-500"><i class="ph-instagram-logo"></i> Instagram</a>
-      <a href="https://x.com/GUGUGAGA_Arts" class="hover:text-blue-500"><i class="ph-twitter-logo"></i> X (Twitter)</a>
-      <a href="https://www.youtube.com/@gugugaga_arts" class="hover:text-red-500"><i class="ph-youtube-logo"></i> YouTube</a>
-      <a href="https://www.facebook.com/profile.php?id=61557268756954" class="hover:text-blue-700"><i class="ph-facebook-logo"></i> Facebook</a>
-      <a href="https://t.me/DeeGAGA" class="hover:text-blue-300"><i class="ph-telegram-logo"></i> Telegram</a>
-      <a href="https://discord.gg/vtFF6neK" class="hover:text-indigo-400"><i class="ph-discord-logo"></i> Discord</a>
+</head><body>
+  <header>
+    <h1>Welcome to DeeGAGA's Universe</h1>
+    <p>The home of creativity, music, dance, and ultimate tech vibes – join the movement with GUGUGAGA!</p>
+  </header>  <div class="live-box">🎤 DeeGAGA | Dangerzone | GUGUGAGA | G-Spot Studios | BLUEHOUSE 💃</div>  <section>
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <div class="section-box">
+      <i class="fas fa-microphone"></i>
+      <p>I'm DeeGAGA, a diverse artist producing music, managing dance crews, and building a digital empire. From lyrics to beats, from novels to tech – I do it all under GUGUGAGA.</p>
     </div>
-  </section>  <!-- Footer -->  <footer class="mt-10 text-sm text-gray-400">
-    <p>&copy; 2025 DeeGAGA / GUGUGAGA_Arts. Powered by Dangerzone @ G-Spot Studios.</p>
-  </footer>
+  </section>  <section>
+    <h2><i class="fas fa-music"></i> Music & Production</h2>
+    <div class="section-box">
+      <i class="fas fa-headphones"></i>
+      <p>Founder of G-Spot Studios. I create and produce pop & trap music. Check out my sounds, collabs with GUGU Duntler, and fan-favorite tracks on all major platforms!</p>
+    </div>
+  </section>  <section>
+    <h2><i class="fas fa-users"></i> BLUEHOUSE Dance House</h2>
+    <div class="section-box">
+      <i class="fas fa-dance"></i>
+      <p>We are a dance family open to anyone. BLUEHOUSE is your home if you live for rhythm, stage, and team energy. Come perform, compete, and vibe with us!</p>
+    </div>
+  </section>  <section>
+    <h2><i class="fas fa-envelope"></i> Connect with Me</h2>
+    <div class="section-box">
+      <p>Let's create something dope together or simply vibe. Hit me up anytime!</p>
+      <div class="contact-buttons">
+        <a href="https://wa.me/254793833877"><i class="fab fa-whatsapp"></i> WhatsApp Me</a>
+        <a href="mailto:gugugaga.arts@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
+        <a href="https://instagram.com/dee.gaga_0fficial"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/GUGUGAGA_Arts"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com/@gugugaga_arts"><i class="fab fa-youtube"></i></a>
+        <a href="https://tiktok.com/@g.spot.studios.fe"><i class="fab fa-tiktok"></i></a>
+        <a href="https://tune.fm/@GugugagaArts"><i class="fas fa-music"></i></a>
+        <a href="https://discord.gg/vtFF6neK"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </section>
 </body></html>
