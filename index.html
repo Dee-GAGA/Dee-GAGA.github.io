@@ -1,148 +1,157 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DeeGAGA | GUGUGAGA</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Styling -->
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }body {
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  color: #fff;
-  overflow-x: hidden;
-}
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://images.unsplash.com/photo-1511453679115-1f4c5f04c0e4') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
 
-header {
-  text-align: center;
-  padding: 50px 20px 20px;
-  background: rgba(0, 0, 0, 0.3);
-}
+    header {
+      background: rgba(0,0,0,0.7);
+      padding: 2rem;
+      text-align: center;
+    }
 
-header h1 {
-  font-size: 3em;
-  color: #ff4ec4;
-}
+    header h1 {
+      font-size: 3rem;
+      animation: typing 5s steps(40, end), blink 0.75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 4px solid;
+      width: fit-content;
+      margin: auto;
+    }
 
-header p {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #fff;
-}
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
 
-.live-box {
-  margin: 20px auto;
-  text-align: center;
-  font-size: 1.5em;
-  animation: pulse 3s infinite;
-  color: #00fff7;
-}
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
 
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+    section {
+      background: rgba(0,0,0,0.6);
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 800px;
+    }
 
-section {
-  padding: 40px 20px;
-  text-align: center;
-}
+    h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 0.5rem;
+    }
 
-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #ff9e00;
-}
+    .socials a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: white;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
 
-.section-box {
-  margin: 20px auto;
-  max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease;
-}
+    .socials a:hover {
+      color: cyan;
+    }
 
-.section-box:hover {
-  transform: scale(1.03);
-}
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
 
-.section-box i {
-  font-size: 2em;
-  margin-bottom: 10px;
-  display: block;
-  color: #fff;
-}
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+    }
 
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 30px;
-}
+    .projects img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-top: 1rem;
+    }
 
-.contact-buttons a {
-  text-decoration: none;
-  background: #ff4ec4;
-  padding: 10px 20px;
-  border-radius: 30px;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    /* Glowing Cursor */
+    html {
+      cursor: url("https://cur.cursors-4u.net/others/oth-9/oth838.cur"), auto;
+    }
 
-.contact-buttons a:hover {
-  background: #ff9e00;
-}
-
+    /* Scroll Animation */
+    @keyframes bgMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
   </style>
-</head><body>
+</head>
+
+<body>
   <header>
     <h1>Welcome to DeeGAGA's Universe</h1>
     <p>The home of creativity, music, dance, and ultimate tech vibes – join the movement with GUGUGAGA!</p>
-  </header>  <div class="live-box">🎤 DeeGAGA | Dangerzone | GUGUGAGA | G-Spot Studios | BLUEHOUSE 💃</div>  <section>
-    <h2><i class="fas fa-user"></i> About Me</h2>
-    <div class="section-box">
-      <i class="fas fa-microphone"></i>
-      <p>I'm DeeGAGA, a diverse artist producing music, managing dance crews, and building a digital empire. From lyrics to beats, from novels to tech – I do it all under GUGUGAGA.</p>
-    </div>
-  </section>  <section>
-    <h2><i class="fas fa-music"></i> Music & Production</h2>
-    <div class="section-box">
-      <i class="fas fa-headphones"></i>
-      <p>Founder of G-Spot Studios. I create and produce pop & trap music. Check out my sounds, collabs with GUGU Duntler, and fan-favorite tracks on all major platforms!</p>
-    </div>
-  </section>  <section>
-    <h2><i class="fas fa-users"></i> BLUEHOUSE Dance House</h2>
-    <div class="section-box">
-      <i class="fas fa-dance"></i>
-      <p>We are a dance family open to anyone. BLUEHOUSE is your home if you live for rhythm, stage, and team energy. Come perform, compete, and vibe with us!</p>
-    </div>
-  </section>  <section>
-    <h2><i class="fas fa-envelope"></i> Connect with Me</h2>
-    <div class="section-box">
-      <p>Let's create something dope together or simply vibe. Hit me up anytime!</p>
-      <div class="contact-buttons">
-        <a href="https://wa.me/254793833877"><i class="fab fa-whatsapp"></i> WhatsApp Me</a>
-        <a href="mailto:gugugaga.arts@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
-        <a href="https://instagram.com/dee.gaga_0fficial"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com/GUGUGAGA_Arts"><i class="fab fa-twitter"></i></a>
-        <a href="https://youtube.com/@gugugaga_arts"><i class="fab fa-youtube"></i></a>
-        <a href="https://tiktok.com/@g.spot.studios.fe"><i class="fab fa-tiktok"></i></a>
-        <a href="https://tune.fm/@GugugagaArts"><i class="fas fa-music"></i></a>
-        <a href="https://discord.gg/vtFF6neK"><i class="fab fa-discord"></i></a>
-      </div>
+    <p>🎤 DeeGAGA | Dangerzone | GUGUGAGA | G-Spot Studios | BLUEHOUSE 💃</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I'm DeeGAGA, a diverse artist producing music, managing dance crews, and building a digital empire. From lyrics to beats, from novels to tech – I do it all under GUGUGAGA.</p>
+  </section>
+
+  <section>
+    <h2>Music & Production</h2>
+    <p>Founder of G-Spot Studios. I create and produce pop & trap music. Check out my sounds, collabs with GUGU Duntler, and fan-favorite tracks on all major platforms!</p>
+    <iframe src="https://www.youtube.com/embed/vdD3QFDt7ek" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2>BLUEHOUSE Dance House</h2>
+    <p>We are a dance family open to anyone. BLUEHOUSE is your home if you live for rhythm, stage, and team energy. Come perform, compete, and vibe with us!</p>
+    <iframe src="https://www.youtube.com/embed/QORObJ0UIpY" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2>Projects Preview</h2>
+    <div class="projects">
+      <img src="https://raw.githubusercontent.com/deegaga/deegaga.github.io/main/assets/sample-project.png" alt="Project Preview">
+      <p>🎧 Track & Fan Manager – Organize music & interact with fans in one dashboard.</p>
     </div>
   </section>
-</body></html>
+
+  <section>
+    <h2>Connect with Me</h2>
+    <p>Let's create something dope together or simply vibe. Hit me up anytime!</p>
+    <div class="socials">
+      <a href="https://wa.me/254793833877"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="mailto:gugugaga.arts@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://instagram.com/dee.gaga_0fficial"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://x.com/GUGUGAGA_Arts"><i class="fab fa-x-twitter"></i> X (Twitter)</a>
+      <a href="https://youtube.com/@gugugaga_arts"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://tiktok.com/@g.spot.studios.fe"><i class="fab fa-tiktok"></i> TikTok</a>
+      <a href="https://tune.fm/@GugugagaArts"><i class="fas fa-music"></i> Tune.fm</a>
+      <a href="https://discord.gg/vtFF6neK"><i class="fab fa-discord"></i> Discord</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 DeeGAGA | All rights reserved | GUGUGAGA Universe</p>
+  </footer>
+</body>
+</html>
