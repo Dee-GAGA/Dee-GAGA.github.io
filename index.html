@@ -4,7 +4,15 @@
   <title>DeeGAGA | GUGUGAGA Arts</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}    body {
       margin: 0;
       padding: 0;
       background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -88,7 +96,23 @@ iframe {
 </head><body>
   <header>
     <h1>DeeGAGA</h1>
-    <p class="intro">Welcome to the galaxy of sound, rhythm, and raw creative fire. I'm DeeGAGA — artist, dancer, producer, and the chaotic mastermind behind GUGUGAGA. If you vibe with authenticity, insane energy, and artistry that doesn’t follow the rules — hit those icons and dive into my world. No filters. No fear. Just fire. 🔥</p>
+ 
+<div class="animate-fade-in">
+  <section class="text-center py-12 px-4 sm:px-6 lg:px-8">
+  <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white">
+    Welcome to the Universe of DeeGAGA 🌌
+  </h1>
+  <p class="mt-6 text-lg leading-8 text-gray-300 max-w-3xl mx-auto">
+    I’m not just a musician—I’m an experience. Dive into a fusion of rhythm, visuals, and real stories crafted at <strong>GUGUGAGA Arts</strong>. 
+    Tap on any icon below and explore my world—whether it's music, dance, production, or wild creative madness.
+  </p>
+  <div class="mt-8">
+    <a href="#contact" class="inline-block bg-white text-black font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-gray-200 transition">
+      Let's Connect 🔗
+    </a>
+  </div>
+</section>
+</div>   <p class="intro">Welcome to the galaxy of sound, rhythm, and raw creative fire. I'm DeeGAGA — artist, dancer, producer, and the chaotic mastermind behind GUGUGAGA. If you vibe with authenticity, insane energy, and artistry that doesn’t follow the rules — hit those icons and dive into my world. No filters. No fear. Just fire. 🔥</p>
   </header>  <section class="socials">
     <a href="https://www.instagram.com/dee.gaga_0fficial">Instagram</a>
     <a href="https://x.com/GUGUGAGA_Arts">X (Twitter)</a>
@@ -106,6 +130,6 @@ iframe {
   </section>  <section class="videos">
     <h2>Featured Videos</h2>
     <iframe src="https://www.youtube.com/embed/mvbgEf1aG-c" frameborder="0" allowfullscreen></iframe>
-    <!-- Add more iframes here if needed -->
+    
   </section>
 </body></html>
